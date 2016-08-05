@@ -5,6 +5,26 @@ with Ruby on Rails applications.
 
 ## Usage
 
+**At the moment, we've confirmed that the fonts and stylesheets in this repo
+work in Rails apps.  JavaScript is TBD.**
+
+Until this gem is released, you can load it via GitHub:
+
+```
+gem 'uswds-rails', github: '18F/uswds-rails-gem'
+```
+
+Then bundle and include the stylesheets in your manifest in this order:
+
+```
+# app/assets/stylesheets/application.scss
+
+@import 'uswds/all';
+@import 'uswds_overrides/all';
+```
+
+Now, all of the standard USWDS css is available in your rails app. To learn
+more, visit [the docs](https://standards.usa.gov/).
 
 ## Contributing
 
