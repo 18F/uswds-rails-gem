@@ -1,0 +1,11 @@
+@mixin external-link($external-link, $external-link-hover) {
+  &::after {
+    background: image-url('#{$external-link}.png') no-repeat 0 0;
+    background: image-url('#{$external-link}.svg') no-repeat 0 0;
+  }
+
+  &:hover::after {
+    background-image: image-url('#{$external-link-hover}.png');
+    background-image: image-url('#{$external-link-hover}.svg');
+  }
+}

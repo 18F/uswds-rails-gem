@@ -2,8 +2,8 @@ require 'spec_helper'
 
 feature 'Hello World' do
   scenario 'can access application.css' do
-    visit '/assets/uswds/rails/application.css'
+    visit '/assets/uswds/application.css'
 
-    expect(page).to have_content '/* Hello World */'
+    expect(page.status_code).to eq 200
   end
 end
