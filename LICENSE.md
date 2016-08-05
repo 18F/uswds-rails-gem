@@ -1,3 +1,11 @@
+# A few parts of this project are not in the public domain
+
+Some of the code in `lib/uswds/rails.rb` and `lib/uswds/rails/engine.rb`
+is derivative of [bootstrap-sass](https://github.com/twbs/bootstrap-sass)
+under the [MIT license](https://github.com/twbs/bootstrap-sass/blob/master/LICENSE).
+
+# The rest of this project is in the public domain
+
 As a work of the United States Government, this project is in the
 public domain within the United States.
 
