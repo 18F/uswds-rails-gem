@@ -1,0 +1,8 @@
+select {
+  background-image: image-url('arrow-down.png');
+  background-image: image-url('arrow-down.svg');
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-image: image-url('correct8.png');
+  background-image: image-url('correct8.svg');

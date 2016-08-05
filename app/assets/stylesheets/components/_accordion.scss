@@ -1,0 +1,10 @@
+@mixin accordion-button-styles {
+  background-image: image-url('minus.png');
+  background-image: image-url('minus.svg');
+}
+
+@mixin accordion-button-unopened-styles {
+  background-image: image-url('plus.png');
+  background-image: image-url('plus.svg');
+}
+

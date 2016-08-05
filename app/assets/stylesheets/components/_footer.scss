@@ -1,0 +1,35 @@
+.usa-footer-big {
+  .usa-footer-primary-link {
+    background-image: image-url('arrow-down.png');
+    background-image: image-url('arrow-down.svg');
+  }
+
+  ul {
+    &.hidden {
+      .usa-footer-primary-link {
+        background-image: image-url('arrow-right.png');
+        background-image: image-url('arrow-right.svg');
+      }
+    }
+  }
+}
+
+.usa-link-facebook {
+  background-image: image-url('social-icons/png/facebook25.png');
+  background-image: image-url('social-icons/svg/facebook25.svg');
+}
+
+.usa-link-twitter {
+  background-image: image-url('social-icons/png/twitter16.png');
+  background-image: image-url('social-icons/svg/twitter16.svg');
+}
+
+.usa-link-youtube {
+  background-image: image-url('social-icons/png/youtube15.png');
+  background-image: image-url('social-icons/svg/youtube15.svg');
+}
+
+.usa-link-rss {
+  background-image: image-url('social-icons/png/rss25.png');
+  background-image: image-url('social-icons/svg/rss25.svg');
+}
