@@ -6,3 +6,4 @@ select {
 input[type="checkbox"]:checked + label::before {
   background-image: image-url('correct8.png');
   background-image: image-url('correct8.svg');
+}
