@@ -20,7 +20,7 @@ Then bundle and include the stylesheets in your manifest in this order:
 # app/assets/stylesheets/application.scss
 
 @import 'uswds/all';
-@import 'uswds_overrides/all';
+@import 'uswds_rails_overrides/all';
 ```
 
 Now, all of the standard USWDS css is available in your rails app. To learn
