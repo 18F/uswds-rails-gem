@@ -9,3 +9,11 @@
     background-image: image-url('#{$external-link-hover}.svg');
   }
 }
+
+.usa-external_link {
+  @include external-link(external-link, external-link-hover);
+}
+
+.usa-external_link-alt {
+  @include external-link(external-link-alt, external-link-alt-hover);
+}

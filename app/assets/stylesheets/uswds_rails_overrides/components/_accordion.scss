@@ -8,3 +8,14 @@
   background-image: image-url('plus.svg');
 }
 
+.usa-accordion,
+.usa-accordion-bordered {
+  > ul {
+    button {
+      @include accordion-button-styles;
+    }
+    [aria-expanded=false] {
+      @include accordion-button-unopened-styles;
+    }
+  }
+}
