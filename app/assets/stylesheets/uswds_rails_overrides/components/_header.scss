@@ -1,0 +1,32 @@
+.usa-nav-primary {
+  button {
+    &[aria-expanded=false] {
+      background-image: image-url('plus-alt.png');
+      background-image: image-url('plus-alt.svg');
+
+      @include media($nav-width) {
+        background-image: image-url('angle-arrow-down.png');
+        background-image: image-url('angle-arrow-down.svg');
+      }
+    }
+
+    &[aria-expanded=true] {
+      background-image: image-url('minus-alt.png');
+      background-image: image-url('minus-alt.svg');
+
+      @include media($nav-width) {
+        background-image: image-url('angle-arrow-down-hover.png');
+        background-image: image-url('angle-arrow-down-hover.svg');
+      }
+    }
+  }
+}
+
+.usa-nav-secondary-links {
+  .usa-header-search-button {
+    @include media($nav-width) {
+      background-image: image-url('search-alt.png');
+      background-image: image-url('search-alt.svg');
+    }
+  }
+}
