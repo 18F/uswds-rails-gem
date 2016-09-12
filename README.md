@@ -19,6 +19,7 @@ Then bundle and include the stylesheets in your manifest in this order:
 ```
 # app/assets/stylesheets/application.scss
 
+@import 'uswds_rails_overrides/core/defaults';
 @import 'uswds/all';
 @import 'uswds_rails_overrides/all';
 ```
