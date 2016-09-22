@@ -31,6 +31,31 @@ more, visit [the docs](https://standards.usa.gov/).
 
 See [CONTRIBUTING](CONTRIBUTING.md) for additional information.
 
+## Upgrading gem to use a new version of the US Web Design Standards
+
+Someday, we hope to automate this. For now, here is how to manually update to a
+new version of the design standards.
+
+1. Download the latest version of the standards locally
+
+```bash
+$ npm install --save uswds
+```
+
+1. Remove the existing vendored assets
+
+```bash
+$ rm vendor/assets/stylsheets/uswds/*
+```
+
+1. Copy the downloaded assets into the correct location in `vendor`
+
+```bash
+$ mv node_modules/uswds/src/stylesheets/* vendor/assets/stylesheets/uswds/
+```
+
+1. Repeat for fonts, images, and javascripts.
+
 ## Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
