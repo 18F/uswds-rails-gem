@@ -1,6 +1,6 @@
 select {
-  background-image: image-url('arrow-down.png');
-  background-image: image-url('arrow-down.svg');
+  // background-image: image-url('arrow-down.png');
+  // background-image: image-url('arrow-down.svg');
 }
 
 input[type="checkbox"]:checked + label::before {

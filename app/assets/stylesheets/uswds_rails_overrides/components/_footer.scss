@@ -1,14 +1,14 @@
 .usa-footer-big {
   .usa-footer-primary-link {
-    background-image: image-url('arrow-down.png');
-    background-image: image-url('arrow-down.svg');
+    // background-image: image-url('arrow-down.png');
+    // background-image: image-url('arrow-down.svg');
   }
 
   ul {
     &.hidden {
       .usa-footer-primary-link {
-        background-image: image-url('arrow-right.png');
-        background-image: image-url('arrow-right.svg');
+        // background-image: image-url('arrow-right.png');
+        // background-image: image-url('arrow-right.svg');
       }
     }
   }

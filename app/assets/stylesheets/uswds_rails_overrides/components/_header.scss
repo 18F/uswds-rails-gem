@@ -5,8 +5,8 @@
       background-image: image-url('plus-alt.svg');
 
       @include media($nav-width) {
-        background-image: image-url('angle-arrow-down.png');
-        background-image: image-url('angle-arrow-down.svg');
+        // background-image: image-url('angle-arrow-down.png');
+        // background-image: image-url('angle-arrow-down.svg');
       }
     }
 
