@@ -45,7 +45,7 @@ $ npm install --save uswds
 1. Remove the existing vendored assets
 
 ```bash
-$ rm vendor/assets/stylsheets/uswds/*
+$ rm -rf vendor/assets/stylesheets/uswds/*
 ```
 
 1. Copy the downloaded assets into the correct location in `vendor`
