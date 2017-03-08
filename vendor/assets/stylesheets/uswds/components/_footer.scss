@@ -68,6 +68,19 @@
       padding-bottom: 1rem;
       padding-top: 1rem;
     }
+
+    .usa-footer-primary-content {
+      @include media($large-screen) {
+        margin-right: 6%;
+        width: inherit;
+      }
+
+      &:last-child {
+        @include media($large-screen) {
+          margin-right: 0;
+        }
+      }
+    }
   }
 
   .usa-footer-nav ul {
@@ -78,8 +91,23 @@
 }
 
 .usa-footer-slim {
-  .usa-footer-nav a {
-    display: block;
+  .usa-footer-nav {
+    a {
+      display: block;
+    }
+
+    .usa-footer-primary-content {
+      @include media($large-screen) {
+        margin-right: 9%;
+        width: inherit;
+      }
+
+      &:last-child {
+        @include media($large-screen) {
+          margin-right: 0;
+        }
+      }
+    }
   }
 
   .usa-footer-primary-section {
@@ -116,7 +144,7 @@
   }
 }
 
-// scss-lint:disable QualifyingElement
+/* stylelint-disable selector-no-qualifying-type */
 ul.usa-footer-primary-content,
 li.usa-footer-primary-content,
 li.usa-footer-primary-content {
@@ -134,7 +162,7 @@ li.usa-footer-primary-content {
     }
   }
 }
-// scss-lint:enable QualifyingElement
+/* stylelint-enable */
 
 .usa-sign_up-block {
   padding-bottom: 2rem;
@@ -232,18 +260,19 @@ li.usa-footer-primary-content {
         padding-left: 0;
       }
 
-      // scss-lint:disable SelectorDepth
       > * {
         @include margin(0 null);
       }
     }
 
-    &.hidden {
+    &.hidden { /* stylelint-disable-line selector-no-qualifying-type */
       padding-bottom: 0;
 
-      li { display: none; }
+      li {
+        display: none;
+      }
 
-      .usa-footer-primary-link {
+      .usa-footer-primary-link { /* stylelint-disable-line selector-no-qualifying-type */
         background-image: url('#{$image-path}/arrow-right.png');
         background-image: url('#{$image-path}/arrow-right.svg');
         cursor: pointer;
@@ -303,8 +332,10 @@ li.usa-footer-primary-content {
 
 .usa-social_link {
   $background-height: 3rem; // Height of icon within hit area.
-  $hit-area: 4.4rem; // Link hit target is 44 x 44 pixels following Apple iOS
-                     // Human Interface Guidelines.
+  // Link hit target is 44 x 44 pixels following
+  // Apple iOS Human Interface Guidelines.
+  $hit-area: 4.4rem;
+
   @include margin(2.5rem 1rem 1.5rem 0);
   background-position: center center;
   background-repeat: no-repeat;
