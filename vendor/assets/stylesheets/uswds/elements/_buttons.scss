@@ -4,16 +4,17 @@ $button-stroke: inset 0 0 0 2px;
 
 // Buttons
 
-// scss-lint:disable PropertyCount
+/* stylelint-disable selector-no-qualifying-type */
 .usa-button,
 .usa-button-primary,
 .usa-button:visited,
 .usa-button-primary:visited,
 button,
-[type="button"],
-[type="submit"],
-[type="reset"],
-[type="image"] {
+[type=button],
+[type=submit],
+[type=reset],
+[type=image] {
+  @include font-smoothing;
   @include margin(0.5em 0.5em 0.5em null);
   appearance: none;
   background-color: $color-primary;
@@ -31,7 +32,6 @@ button,
   text-align: center;
   text-decoration: none;
   width: 100%;
-  -webkit-font-smoothing: antialiased;
 
   @include media($small-screen) {
     width: auto;
@@ -150,9 +150,9 @@ button,
     padding: 1.5rem 3rem;
   }
 }
-// scss-lint:enable PropertyCount
+/* stylelint-disable */
 
-[type="submit"]:disabled,
+.usa-button:disabled,
 .usa-button-disabled {
   background-color: $color-gray-lighter;
   color: $color-gray-dark;

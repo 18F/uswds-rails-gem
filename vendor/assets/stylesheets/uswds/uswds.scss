@@ -1,23 +1,19 @@
-// Vendor -------------- //
+/*! uswds @version */
 
+// Vendor -------------- //
 @import 'lib/bourbon';
 @import 'lib/neat';
 @import 'lib/normalize';
 
-
 // Core -------------- //
-
-@import 'core/defaults';
+@import 'core/variables';
 @import 'core/fonts';
 @import 'core/base';
-@import 'core/grid-settings';
 @import 'core/grid';
 @import 'core/utilities';
 
-
 // Elements -------------- //
 // Styles basic HTML elements
-
 @import 'elements/buttons';
 @import 'elements/figure';
 @import 'elements/inputs';
@@ -26,15 +22,19 @@
 @import 'elements/table';
 @import 'elements/typography';
 
-
 // Components -------------- //
-
 @import 'components/accordions';
 @import 'components/alerts';
-@import 'components/disclaimer';
+@import 'components/banner';
 @import 'components/footer';
 @import 'components/forms';
-@import 'components/sidenav';
+@import 'components/graphic-list';
 @import 'components/header';
+@import 'components/hero';
+@import 'components/layout';
+@import 'components/media-block';
+@import 'components/navigation';
 @import 'components/search';
+@import 'components/section';
+@import 'components/sidenav';
 @import 'components/skipnav';
