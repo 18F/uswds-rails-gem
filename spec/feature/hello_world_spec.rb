@@ -2,7 +2,7 @@ require 'spec_helper'
 
 feature 'Hello World' do
   scenario 'can access standard uswds css' do
-    visit '/assets/uswds/all.css'
+    visit '/assets/uswds/uswds.css'
 
     expect(page.status_code).to eq 200
   end
