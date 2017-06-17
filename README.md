@@ -17,12 +17,15 @@ gem 'uswds-rails', github: '18F/uswds-rails-gem'
 Then bundle and include the stylesheets in your manifest in this order:
 
 ```
+# rename app/assets/stylesheets/application.css to
 # app/assets/stylesheets/application.scss
 
 @import 'uswds_rails_overrides/core/defaults';
 @import 'uswds/all';
 @import 'uswds_rails_overrides/all';
 ```
+
+Finally, restart the Rails server.
 
 Now, all of the standard USWDS css is available in your rails app. To learn
 more, visit [the docs](https://standards.usa.gov/).
